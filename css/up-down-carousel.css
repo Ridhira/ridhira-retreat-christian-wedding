@@ -1,0 +1,250 @@
+/* .offer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.offer-container h3 {
+  font-size: var(--font-extra-large);
+  font-weight: var(--font-weight-600);
+  color: var(--nav-links);
+  font-family: var(--font-family-meladu);
+  margin: 10rem 0;
+}
+
+#scene {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1400px;
+  height: 400px;
+  position: absolute;
+  top: 40rem;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  overflow: hidden;
+}
+
+#left-zone {
+  height: 75%;
+  flex-grow: 0;
+  display: flex;
+  width: 350px;
+  align-items: center;
+  justify-content: left;
+}
+
+#right-zone {
+  height: 100%;
+  flex-grow: 3;
+}
+
+.list {
+  display: flex;
+  list-style: none;
+  align-content: stretch;
+  flex-direction: column;
+  flex-grow: 1;
+  margin: 0;
+  padding: 0;
+}
+
+.list li.item input[type="radio"] {
+  display: none;
+}
+
+.list li.item input[type="radio"] ~ label {
+  display: block;
+  opacity: 0.5;
+  height: 50px;
+  text-align: left;
+  line-height: 50px;
+  font-family: var(--font-family-gazpacho-1);
+  font-size: var(--font-large);
+  color: var(--nav-links);
+}
+
+.list li.item input[type="radio"] ~ label:first-letter {
+  text-transform: uppercase;
+}
+
+.list li.item input[type="radio"] ~ label:hover {
+  opacity: 0.75;
+  cursor: pointer;
+}
+
+.list li.item input[type="radio"] ~ .content {
+  position: absolute;
+  left: 350px;
+  top: -400px;
+  width: 650px;
+  height: 400px;
+  animation-duration: 0.75s;
+  animation-name: slideout;
+  animation-timing-function: ease-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.list li.item input[type="radio"] ~ .content .picto {
+  height: 300px;
+  width: 80%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 2rem;
+}
+
+.list li.item input[type="radio"] ~ .content.content_strawberry .picto {
+  background-image: url("../img/decoration-image-1.PNG");
+}
+
+.list li.item input[type="radio"] ~ .content.content_banana .picto {
+  background-image: url("../img/decoration-image-2.PNG");
+}
+
+.list li.item input[type="radio"] ~ .content.content_apple .picto {
+  background-image: url("../img/decoration-image-3.PNG");
+}
+
+.list li.item input[type="radio"] ~ .content.content_orange .picto {
+  background-image: url("../img/decoration-image-1.PNG");
+}
+
+.list li.item input[type="radio"] ~ .content p {
+  max-width: 80%;
+  text-align: center;
+}
+.list li.item input[type="radio"]:checked ~ label {
+  opacity: 1;
+  animation: all 1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  color: var(--logo-color);
+  border-right: solid 4px var(--logo-color);
+}
+
+.list li.item input[type="radio"]:checked ~ .content {
+  animation-duration: 0.75s;
+  animation-name: slidein;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+@keyframes slidein {
+  0% {
+    top: -400px;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    top: 0px;
+  }
+}
+@keyframes slideout {
+  0% {
+    top: 0;
+    opacity: 1;
+  }
+  100% {
+    top: -400px;
+    opacity: 0;
+  }
+} */
+
+.offer-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  margin: auto;
+  margin-top: 10rem;
+}
+
+.offer-section h3 {
+  font-size: var(--font-extra-large);
+  font-family: var(--font-family-meladu);
+  font-weight: var(--font-weight-500);
+  color: var(--nav-links);
+  margin-bottom: 6rem;
+}
+
+.offers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.list {
+  width: 65%;
+  display: flex;
+  list-style: none;
+  align-content: stretch;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.list li.item input[type="radio"] {
+  display: none;
+}
+
+.list li.item input[type="radio"] ~ label:first-letter {
+  text-transform: uppercase;
+}
+
+.list li.item input[type="radio"] ~ label {
+  display: block;
+  opacity: 0.5;
+  /* height: 50px; */
+  text-align: center;
+  line-height: 50px;
+  font-family: var(--font-family-gazpacho-1);
+  font-size: var(--font-medium);
+  color: var(--nav-links);
+  border-right: 4px solid var(--nav-links);
+  transition: all 0.5s ease;
+  width: 50rem;
+}
+
+.list li.item input[type="radio"] ~ label:hover {
+  opacity: 0.75;
+  cursor: pointer;
+}
+
+.list li.item input[type="radio"]:checked ~ label {
+  opacity: 1;
+  animation: all 1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  color: var(--logo-color);
+  border-right: solid 4px var(--logo-color);
+  font-size: var(--font-large);
+}
+
+.offer-image-para {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-left: 2rem;
+}
+
+.offer-image-para img {
+  height: 300px;
+  width: 80%;
+  border-radius: 1rem;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.offer-image-para p {
+  max-width: 65%;
+  text-align: center;
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-small);
+  color: var(--black);
+}

@@ -1,0 +1,33 @@
+.about-us {
+  background-image: url(../img/about-us-bg-2.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  padding-bottom: 5rem;
+}
+
+.more-text {
+  display: none;
+}
+
+.about-us-container {
+  width: 30%;
+  min-height: 200px;
+  margin-left: auto;
+  background-color: var(--white);
+  border-bottom-left-radius: 13rem;
+  padding: 6rem 3rem 0 3rem;
+}
+
+.about-us-container h3 {
+  font-size: var(--font-extra-large);
+  font-family: var(--font-family-meladu);
+  font-weight: var(--font-weight-500);
+  color: var(--nav-links);
+}
+
+.know-more-btn-div {
+  width: 45%;
+  margin-left: auto;
+}

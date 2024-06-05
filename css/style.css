@@ -1,0 +1,117 @@
+/* Gazpacho Black */
+@font-face {
+  font-family: "Gazpacho Black";
+  src: url("../fonts/GAZPACHO\ BLACK.TTF") format("truetype");
+  font-weight: 400; /* Black weight is typically 900 */
+  font-style: normal;
+}
+
+/* Gazpacho Medium*/
+@font-face {
+  font-family: "Gazpacho Medium";
+  src: url("../fonts/GAZPACHO\ MEDIUM.TTF") format("truetype");
+  font-weight: 400; /* Black weight is typically 900 */
+}
+
+/* Gazpacho Regular */
+@font-face {
+  font-family: "Gazpacho Regular";
+  src: url("../fonts/GAZPACHO\ REGULAR.TTF") format("truetype");
+  font-weight: 400; /* Bold weight is typically 700 */
+  font-style: normal;
+}
+
+/* Artifact */
+@font-face {
+  font-family: "Artifact";
+  src: url("../fonts//Artifact.otf") format("truetype");
+  font-weight: 400; /* Bold weight is typically 700 */
+  font-style: normal;
+}
+
+/* Meladu Rose */
+@font-face {
+  font-family: "Meladu Rose";
+  src: url("../fonts/MELADU\ ROSE.otf") format("truetype");
+  font-weight: 400; /* Bold weight is typically 700 */
+  font-style: normal;
+}
+
+html {
+  font-size: 62.5% !important;
+}
+
+body {
+  position: relative;
+}
+
+:root {
+  --white: #fff;
+  --black: #000;
+  --bg: #f1efee;
+  --icon-bg: #030a31;
+  --nav-links: #666566;
+  --button: #d9ccc2;
+  --sub-heading: #847152;
+  --logo-color: #dbb469;
+  --font-extra-large: 4rem; /* 40px */
+  --font-large: 3rem; /* 30px */
+  --font-medium: 2rem; /* 20px */
+  --font-small: 1.5rem; /* 15px */
+  --font-extra-small: 1rem; /* 10px */
+  --font-weight-bold: bold;
+  --font-weight-600: 600;
+  --font-weight-500: 500;
+  --font-weight-400: 400;
+  --font-family-poppins: "Poppins";
+  --font-family-meladu: "Meladu Rose";
+  --font-family-artifact: "Artifact";
+  --font-family-gazpacho-1: "Gazpacho Regular";
+  --font-family-gazpacho-2: "Gazpacho Medium";
+  --font-family-gazpacho-3: "Gazpacho Black";
+}
+
+.navbar-links {
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-medium);
+  font-weight: var(--font-weight-500);
+  color: var(--nav-links);
+}
+
+.banner-primary-heading {
+  font-family: var(--font-family-artifact);
+  font-size: 7rem;
+  font-weight: var(--font-weight-600);
+  color: var(--black);
+  text-wrap: nowrap;
+}
+
+.banner-sub-heading {
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-medium);
+  font-weight: var(--font-weight-400);
+  color: var(--sub-heading);
+}
+
+.paragraph {
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-small);
+  color: var(--black);
+}
+
+.know-more-btn {
+  font-family: var(--font-family-gazpacho-1);
+  font-size: var(--font-medium);
+  color: var(--black);
+  background-color: var(--button);
+  padding: 0.5rem 2rem;
+  border-top-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+.section-heading {
+  font-family: var(--font-family-meladu);
+  font-size: var(--font-large);
+  color: var(--nav-links);
+  font-weight: var(--font-weight-600);
+}
